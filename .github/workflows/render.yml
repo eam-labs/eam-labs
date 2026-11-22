@@ -1,0 +1,63 @@
+name: Render profile assets
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "assets/**"
+      - ".github/workflows/render.yml"
+      # hand edits to the SVGs must re-pin the README URLs too, otherwise the
+      # page keeps serving the older asset sha (raw.githubusercontent ignores ?v=)
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Render SVGs
+        run: node scripts/render.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit refreshed assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 1. commit any new or changed SVGs so a stable sha exists
+          #    (git add -A so brand-new asset files are picked up too)
+          git add -A assets
+          if git diff --staged --quiet -- assets; then
+            echo "assets unchanged"
+          else
+            git commit -m "chore: refresh profile assets"
+          fi
+          SHA=$(git rev-parse --short HEAD)
+
+          # 2. pin README image URLs to that sha (raw.githubusercontent ignores
+          #    cache-busting query strings, but a new path is always a new fetch)
+          SHA="$SHA" node -e '
+            const fs = require("fs");
+            const sha = process.env.SHA;
+            let s = fs.readFileSync("README.md", "utf8");
+            s = s.replace(
+              /(raw\.githubusercontent\.com\/eam-labs\/eam-labs\/)(main|[0-9a-f]{7,40})(\/assets\/[a-z-]+\.svg)(\?v=[0-9A-Za-z-]*)?/g,
+              (m, host, ref, path) => host + sha + path
+            );
+            fs.writeFileSync("README.md", s);
+          '
+
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: pin asset URLs to ${SHA}"
+          git push

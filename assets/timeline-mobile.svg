@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="282" viewBox="0 0 400 282" role="img" aria-label="recent commits to this profile">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0508"/><stop offset="1" stop-color="#190a0f"/></linearGradient>
+  <linearGradient id="t" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fca5a5"/><stop offset=".6" stop-color="#ef4444"/><stop offset="1" stop-color="#ef4444"/></linearGradient>
+</defs>
+<style>
+  .ttl{font:600 15px ui-monospace,SFMono-Regular,Menlo,monospace;fill:url(#t)}
+  .sha{font:600 12.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#ef4444}
+  .msg{font:14px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#e9c9d0}
+  .meta{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#b08b96}
+</style>
+<rect width="400" height="282" rx="14" fill="url(#bg)" stroke="#3b1016"/>
+<text x="16" y="32" class="ttl">activity</text>
+<text x="384" y="32" text-anchor="end" class="meta">automation noise filtered</text>
+<g>
+    <line x1="22" y1="38" x2="22" y2="86" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="22" cy="48" r="5" fill="#ef4444"/>
+    <text x="40" y="52" text-anchor="start" class="sha">3c25ec2</text>
+    <text x="384" y="52" text-anchor="end" class="meta">today</text>
+    <text x="40" y="74" text-anchor="start" class="msg">Workflow: re-pin when assets change by …</text>
+  </g>
+<g>
+    <line x1="22" y1="96" x2="22" y2="144" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="22" cy="106" r="4" fill="#dc2626"/>
+    <text x="40" y="110" text-anchor="start" class="sha">2d46f17</text>
+    <text x="384" y="110" text-anchor="end" class="meta">today</text>
+    <text x="40" y="132" text-anchor="start" class="msg">Hero: drop activity claim, match card w…</text>
+  </g>
+<g>
+    <line x1="22" y1="154" x2="22" y2="202" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="22" cy="164" r="4" fill="#dc2626"/>
+    <text x="40" y="168" text-anchor="start" class="sha">c3ab3c5</text>
+    <text x="384" y="168" text-anchor="end" class="meta">today</text>
+    <text x="40" y="190" text-anchor="start" class="msg">Timeline card: fit content height, AA-s…</text>
+  </g>
+<g>
+    <line x1="22" y1="212" x2="22" y2="260" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="22" cy="222" r="4" fill="#dc2626"/>
+    <text x="40" y="226" text-anchor="start" class="sha">6481d65</text>
+    <text x="384" y="226" text-anchor="end" class="meta">today</text>
+    <text x="40" y="248" text-anchor="start" class="msg">Responsive activity card, tighter claim…</text>
+  </g>
+</svg>

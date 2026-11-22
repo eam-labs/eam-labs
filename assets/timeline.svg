@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="282" viewBox="0 0 880 282" role="img" aria-label="recent commits to this profile">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0508"/><stop offset="1" stop-color="#190a0f"/></linearGradient>
+  <linearGradient id="t" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fca5a5"/><stop offset=".6" stop-color="#ef4444"/><stop offset="1" stop-color="#ef4444"/></linearGradient>
+</defs>
+<style>
+  .ttl{font:600 14px ui-monospace,SFMono-Regular,Menlo,monospace;fill:url(#t)}
+  .sha{font:600 11.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#ef4444}
+  .msg{font:12.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#e9c9d0}
+  .meta{font:11.5px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#b08b96}
+</style>
+<rect width="880" height="282" rx="14" fill="url(#bg)" stroke="#3b1016"/>
+<text x="32" y="46" class="ttl">activity</text>
+<text x="848" y="46" text-anchor="end" class="meta">commits to this page · automation noise filtered</text>
+<g>
+    <line x1="38" y1="40" x2="38" y2="84" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="38" cy="62" r="5" fill="#ef4444"/>
+    <text x="60" y="58" class="sha">3c25ec2</text>
+    <text x="128" y="58" class="msg">Workflow: re-pin when assets change by hand</text>
+    <text x="848" y="58" text-anchor="end" class="meta">today</text>
+  </g>
+<g>
+    <line x1="38" y1="84" x2="38" y2="128" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="38" cy="106" r="4" fill="#dc2626"/>
+    <text x="60" y="102" class="sha">2d46f17</text>
+    <text x="128" y="102" class="msg">Hero: drop activity claim, match card width, rebalance …</text>
+    <text x="848" y="102" text-anchor="end" class="meta">today</text>
+  </g>
+<g>
+    <line x1="38" y1="128" x2="38" y2="172" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="38" cy="150" r="4" fill="#dc2626"/>
+    <text x="60" y="146" class="sha">c3ab3c5</text>
+    <text x="128" y="146" class="msg">Timeline card: fit content height, AA-safe dots and tit…</text>
+    <text x="848" y="146" text-anchor="end" class="meta">today</text>
+  </g>
+<g>
+    <line x1="38" y1="172" x2="38" y2="216" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="38" cy="194" r="4" fill="#dc2626"/>
+    <text x="60" y="190" class="sha">6481d65</text>
+    <text x="128" y="190" class="msg">Responsive activity card, tighter claims wording, fix a…</text>
+    <text x="848" y="190" text-anchor="end" class="meta">today</text>
+  </g>
+<g>
+    <line x1="38" y1="216" x2="38" y2="260" stroke="#3b1016" stroke-width="1.5"/>
+    <circle cx="38" cy="238" r="4" fill="#dc2626"/>
+    <text x="60" y="234" class="sha">799e09a</text>
+    <text x="128" y="234" class="msg">Mobile hero, contrast and a11y pass, harden asset commi…</text>
+    <text x="848" y="234" text-anchor="end" class="meta">today</text>
+  </g>
+</svg>

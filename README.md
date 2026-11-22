@@ -6,8 +6,8 @@
 <div align="center">
 
 <picture>
-  <source media="(max-width: 599px)" srcset="https://raw.githubusercontent.com/eam-labs/eam-labs/c13ef22/assets/hero-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/eam-labs/eam-labs/c13ef22/assets/hero.svg" width="100%" alt="EAM — developer focused on tooling, web systems and automation" />
+  <source media="(max-width: 599px)" srcset="https://raw.githubusercontent.com/eam-labs/eam-labs/c42492e/assets/hero-mobile.svg" />
+  <img src="https://raw.githubusercontent.com/eam-labs/eam-labs/c42492e/assets/hero.svg" width="100%" alt="EAM — developer focused on tooling, web systems and automation" />
 </picture>
 
 <br />
@@ -70,8 +70,8 @@ Only what this repository demonstrates, with a link to prove each line.
 <div align="center">
 
 <picture>
-  <source media="(max-width: 599px)" srcset="https://raw.githubusercontent.com/eam-labs/eam-labs/c13ef22/assets/timeline-mobile.svg" />
-  <img src="https://raw.githubusercontent.com/eam-labs/eam-labs/c13ef22/assets/timeline.svg" width="100%" alt="recent commits to this profile page, generated from the GitHub API" />
+  <source media="(max-width: 599px)" srcset="https://raw.githubusercontent.com/eam-labs/eam-labs/c42492e/assets/timeline-mobile.svg" />
+  <img src="https://raw.githubusercontent.com/eam-labs/eam-labs/c42492e/assets/timeline.svg" width="100%" alt="recent commits to this profile page, generated from the GitHub API" />
 </picture>
 
 </div>
